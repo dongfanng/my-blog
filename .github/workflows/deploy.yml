@@ -60,7 +60,7 @@ jobs:
       - name: Build project
         run: |
           echo ${{ github.workspace }}
-          npm run build  # 使用 npm 的构建命令
+          npm run docs:build  # 使用 npm 的构建命令
 
       # 资源拷贝（根据需求，若使用 Jekyll 仍然适用）
       - name: Build with Jekyll
