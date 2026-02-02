@@ -1,5 +1,5 @@
-import { defineConfig } from 'vitepress'
-const base = "/my-blog/"; 
+import { defineConfig } from "vitepress";
+const base = "/my-blog/";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -9,22 +9,30 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
+      { text: "Home", link: "/" },
+      { text: "Examples", link: "/markdown-examples" },
     ],
 
     sidebar: [
       {
-        text: 'Examples',
+        text: "Examples",
         items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
-        ]
-      }
+          { text: "Markdown Examples", link: "/markdown-examples" },
+          { text: "Runtime API Examples", link: "/api-examples" },
+        ],
+      },
     ],
-
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
-    ]
-  }
-})
+    editLink: {
+      pattern: "https://github.com/dongfanng/my-blog/edit/main/docs/:path",
+      text: "在 GitHub 上编辑此页",
+    },
+    lastUpdated: {
+      text: "最后更新于",
+      formatOptions: {
+        dateStyle: "short",
+        timeStyle: "medium",
+      },
+    },
+    socialLinks: [{ icon: "github", link: "https://github.com/dongfanng/my-blog" }],
+  },
+});
