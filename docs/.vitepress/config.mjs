@@ -1,5 +1,5 @@
 import { defineConfig } from "vitepress";
-const base = "/my-blog/";
+const base = "/df_blog/";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -23,7 +23,7 @@ export default defineConfig({
       },
     ],
     editLink: {
-      pattern: "https://github.com/dongfanng/my-blog/edit/main/docs/:path",
+      pattern: "https://github.com/dongfanng/df_blog/edit/main/docs/:path",
       text: "在 GitHub 上编辑此页",
     },
     lastUpdated: {
@@ -33,6 +33,6 @@ export default defineConfig({
         timeStyle: "medium",
       },
     },
-    socialLinks: [{ icon: "github", link: "https://github.com/dongfanng/my-blog" }],
+    socialLinks: [{ icon: "github", link: "https://github.com/dongfanng/df_blog" }],
   },
 });
