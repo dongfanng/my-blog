@@ -19,7 +19,7 @@ export default {
             repo: 'dongfanng/df_blog',
             repoId: 'R_kgDONQghKg',
             category: 'General', // default: `General`
-            categoryId: 'DIC_kwDONQghKs4C1zhBid',
+            categoryId: 'DIC_kwDONQghKs4C1zhB',
             mapping: 'pathname', // default: `pathname`
             inputPosition: 'top', // default: `top`
             lang: 'zh-CN', // default: `zh-CN`
